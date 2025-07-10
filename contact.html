@@ -1,80 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contact CleanCanna™</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #004d40;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        .section {
-            padding: 40px 20px;
-            max-width: 600px;
-            margin: auto;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px #ccc;
-        }
-        .center {
-            text-align: center;
-        }
-        input, textarea {
-            width: 95%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        button {
-            padding: 10px 30px;
-            border: none;
-            background-color: #00796b;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        footer {
-            background-color: #004d40;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | CleanCanna™</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      background-color: #004d40;
+    }
+    .navbar-brand, .nav-link, footer {
+      color: white !important;
+    }
+    .form-section {
+      padding: 60px 20px;
+    }
+    .form-container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #ccc;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    footer {
+      background-color: #004d40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Contact CleanCanna™</h1>
-    <p>We'd love to hear from you</p>
-</header>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">CleanCanna™</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html#why">Why</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#lab">Lab</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#certs">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="licensing.html">Licensing</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<section class="section center">
-    <h2>Reach Out</h2>
-    <p>Email: <strong>CleanCannaOfficial@gmail.com</strong><br>
-       Phone: <strong>(310) 617-7510</strong></p>
+<section class="form-section">
+  <div class="form-container">
+    <h2 class="text-center mb-4">Get in Touch with CleanCanna™</h2>
     <form action="https://formspree.io/f/mnqekkjk" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="_replyto" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Send</button>
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" name="_replyto" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Send Message</button>
     </form>
+  </div>
 </section>
 
 <footer>
-    &copy; 2025 CleanCanna™ — All Rights Reserved.
+  <p>&copy; 2025 CleanCanna™ — All Rights Reserved.</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
